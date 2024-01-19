@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Setare Alarmă"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:amPmTextColor="#CC3F3F"
+        android:headerBackground="#23AF29"
+        android:numbersBackgroundColor="#9ED593"
+        android:numbersInnerTextColor="#574D4D"
+        android:numbersSelectorColor="#23AF29"
+        android:numbersTextColor="#1C1919"
+        android:scrollbarThumbHorizontal="@color/design_default_color_error" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSetare"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#388E3C">
+
+        <Button
+            android:id="@+id/btnSetare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Setare"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAnulare"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/cardViewSetare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#D32F2F">
+
+        <Button
+            android:id="@+id/btnAnulare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Anulare"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
